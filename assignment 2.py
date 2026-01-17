@@ -1,6 +1,4 @@
-
 import math
-
 
 # 1) Kiểm tra chiều dài cá zander
 def check_zander_length():
@@ -180,4 +178,5 @@ def main_menu():
 
 
 if __name__ == "__main__":
+
     main_menu()
