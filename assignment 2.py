@@ -1,4 +1,6 @@
+
 import math
+
 
 # 1) Kiểm tra chiều dài cá zander
 def check_zander_length():
@@ -149,34 +151,16 @@ def compare_two_pizzas():
     else:
         print("Pizza 2 có giá trị tốt hơn (giá/đơn vị rẻ hơn).")
 
-
-# Menu đơn giản để chạy từng chức năng
-def main_menu():
-    actions = {
-        "1": ("Kiểm tra chiều dài cá zander", check_zander_length),
-        "2": ("Mô tả loại cabin", describe_cabin),
-        "3": ("Trạng thái hemoglobin", hemoglobin_status),
-        "4": ("Kiểm tra năm nhuận", ask_leap_year),
-        "5": ("So sánh hai pizza", compare_two_pizzas),
-        "q": ("Thoát", None),
-    }
-
-    while True:
-        print("\nChọn hành động:")
-        for key, (desc, _) in actions.items():
-            print(f"  {key}: {desc}")
-        choice = input("Nhập lựa chọn: ").strip().lower()
-        if choice == "q":
-            print("Kết thúc chương trình.")
-            break
-        action = actions.get(choice)
-        if action:
-            func = action[1]
-            func()
-        else:
-            print("Lựa chọn không hợp lệ. Thử lại.")
-
-
 if __name__ == "__main__":
-
-    main_menu()
+    print("Bắt đầu chương trình. Chương trình sẽ chạy lần lượt 5 chức năng.\n")
+    print("--- 1) Kiểm tra chiều dài cá zander ---")
+    check_zander_length()
+    print("\n--- 2) Mô tả loại cabin ---")
+    describe_cabin()
+    print("\n--- 3) Trạng thái hemoglobin ---")
+    hemoglobin_status()
+    print("\n--- 4) Kiểm tra năm nhuận ---")
+    ask_leap_year()
+    print("\n--- 5) So sánh hai pizza ---")
+    compare_two_pizzas()
+    print("\nKết thúc chương trình.")
