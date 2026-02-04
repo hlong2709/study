@@ -95,7 +95,6 @@ def main():
         print("Bài 6: Lấy ký tự giữa")
         print("Bài 7: Tạo tự viết tắt (acronym)")
         print("0. Thoát chương trình")
-        print("Xin lỗi thầy vì đã dùng AI cho cái menu này ạ :((")
         print("======================================")
         
         choice = input("Mời bạn chọn chức năng (0-7): ")
@@ -121,6 +120,7 @@ def main():
             print("Lựa chọn không đúng, Hãy nhập lại.")
 if __name__ == "__main__":
     main()
+
 
 
 
